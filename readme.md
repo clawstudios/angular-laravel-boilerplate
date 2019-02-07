@@ -25,14 +25,75 @@ You need to fulfill Angular and Laravel requirements.
  
 # Installation
 
-#### Installing Angular
+
+#### Install Angular-Cli
+[Official Angular-Cli Documentation](https://cli.angular.io/)
+
+```sh
+$ npm install -g @angular/cli
+```
+
+#### Setup UI Project
 ```sh
 $ cd ui
 $ npm install
 ```
 
-#### Installing Laravel
+#### Install Laravel
+[Official Laravel Documentation](https://laravel.com/docs/5.7/installation)
+
+```sh
+$ composer global require laravel/installer
+```
+
+#### Setup BE Project
 ```sh
 $ cd be
 $ composer install
 ```
+
+
+# Local Development
+
+#### UI Project
+You can use the npm script:
+
+```sh
+$ cd ui
+$ npm start
+```
+Or you can do:
+
+```sh
+$ cd ui
+$ ng serve --configuration=cli
+```
+
+#### BE Project
+For laravel you can serve the project like this:
+
+```sh
+$ cd be
+$ php artisan serve
+```
+
+
+# Production Deployment
+
+#### UI Project
+You can use the npm script:
+
+```sh
+$ cd ui
+$ npm build
+```
+Or you can do:
+
+```sh
+$ cd ui
+$ ng build --configuration=production && cp -rf dist/* ../be/public/
+```
+* NOTE: We do not recommend to change output path (dist/) to be/public because Angular-cli will delete output path folder and then build, if this folder gets delted you will be missing some laravel files. 
+
+#### BE Project
+For laravel production deployment we recommend reading [Official Laravel Deployment Documentation](https://laravel.com/docs/5.7/deployment) since configuration may change depending on the server you are using.
