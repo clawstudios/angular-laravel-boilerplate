@@ -1,0 +1,40 @@
+/*
+    Many imports from Materialize css to use a color.
+    This not necessarily have to be like this but for an example is OK
+*/
+@import '../../../scss/materialize/components/color-variables';
+@import '../../../scss/materialize/components/color-classes';
+@import '../../../scss/materialize/components/variables';
+
+.example {
+
+    // nesting
+    .custom-height {
+        min-height: 500px;
+    }
+
+    .card {
+        // .card + .custom-margin 
+        &.custom-margin {
+            margin-top: 50px;
+        }
+
+        .response-box {
+            padding: 15px;
+            text-align: center;
+            background-color: $primary-color; // using color var
+            color: white;
+        }
+
+        // more nesting
+        .button-box {
+            margin-top: 25px;
+
+            .example-button {
+                margin-right: 15px;
+                background-color: $primary-color; // using color var
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+<section class="example">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Bootcamp</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="row">
+    <div class="col s10 offset-s1 m6 offset-m3">
+        <div class="card custom-height custom-margin">
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4 ">Click the buttons below to make API requests:<i class="material-icons right">more_vert</i></span>
+            <p *ngIf="message" class="response-box">This is the Service Response: <b>{{ message }}</b></p>
+
+            <div class="row">
+              <div class="col s10 offset-s1 center-align button-box">
+                <a class="waves-effect waves-light btn example-button" (click)="getExample()">GET</a>
+                <a class="waves-effect waves-light btn example-button" (click)="createExample()">CREATE</a>
+                <a class="waves-effect waves-light btn example-button" (click)="updateExample()">UPDATE</a>
+                <a class="waves-effect waves-light btn example-button" (click)="deleteExample(20)">DELETE</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information that is only revealed once clicked on.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+            
