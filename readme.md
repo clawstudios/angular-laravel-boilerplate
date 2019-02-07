@@ -1,4 +1,4 @@
-[![N|Solid](https://pbs.twimg.com/profile_images/1081702613823967233/SeXAgWwO_200x200.jpg)](https://twitter.com/ClawStudiosOk)
+[![Claw Studios](https://pbs.twimg.com/profile_images/1081702613823967233/SeXAgWwO_200x200.jpg)](https://twitter.com/ClawStudiosOk)
 
 # Angular + Laravel API
 
